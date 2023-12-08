@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +7,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
+  padding: 0px;
   background: #000000;
 }
 
@@ -125,7 +130,7 @@ main {
     255,
     255,
     255,
-    0.3
+    0.4
   );
   width: auto;
   height: 100vh;
@@ -141,6 +146,9 @@ main {
 
 .main-img {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-img img {
@@ -149,6 +157,7 @@ main {
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  margin:0;
 }
 
 .col::before {
@@ -176,8 +185,8 @@ main {
 .text-center .white {
   padding: 20px;
   color: #fff;
-  margin: 50px;
-  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .text-center .white a {
@@ -189,15 +198,22 @@ main {
 
 .text-center .prices {
   color: #000000;
-  margin: 75px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  text-align: center;
 }
 
 .text-center .price_container h1 {
-  margin: 60px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  text-align: center;
+  color: #000000;
+}
+
+.note h4 {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.note p {
+  text-align: center;
   color: #000000;
 }
 
@@ -214,29 +230,27 @@ main {
   font-size: 0.8em;
   letter-spacing: 1px;
   border-radius: 0px;
-  margin: 0 70px;
+  margin:0 100px;
   margin-top: 10px;
   cursor: pointer;
 }
 
-.buttons .btn-outline {
-  background-color: #fff;
-  color: #1b3e90;
-  max-width: 90%;
-  min-width: 150px;
-  padding: 10px 17px;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  border-radius: 0px;
-  margin: 0 65px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  cursor: pointer;
+.buttons .btn-white:hover {
+  background-color:royalblue;
+  border: solid 2px #000000;
+  color: #000000;
 }
 
-.buttons .btn-outline:hover {
-  background-color: #1b3e90;
-  color: #fff;
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 /*Konten About*/
@@ -247,16 +261,33 @@ main {
   padding: 20px;
   backdrop-filter: blur(10px);
   color: #fff;
-  margin: 0 auto;
-  max-width: max-content;
+  float: left;
   margin-top: 40px;
+  max-width: 200%;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: -70px;
+}
+
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+aside {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .content.about h2 {
   text-align: center;
+  margin: 0;
 }
+
 .content.about p {
   color: #fff;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -291,12 +322,18 @@ main {
   padding: 20px;
   backdrop-filter: blur(10px);
   color: #fff;
-  margin: 0 auto;
-  max-width: max-content;
+  float: left;
+  margin-top: -10px;
+  max-width: 200%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: -70px;
 }
 
 .content.specification h2 {
-    text-align: center
+  text-align: center;
+  margin: 0;
 }
 
 .content.specification article {
@@ -332,45 +369,68 @@ th, td strong {
 
 /*Konten Warna*/
 .content.warna {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    color: #fff;
-    margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  float: right;
+  max-width: 100%;
+  margin-top: 40px;
+  flex-basis: 25%;
+  box-sizing: border-box;
+  margin-left: 90px;
+  margin-right: 20px;
 }
 
 .content.warna h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .MT-color {
-    display: flex;
-    gap: 20px; /* Jarak antar gambar dan teks */
-    align-items: center; /* Posisikan secara vertikal */
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Menata elemen secara vertikal */
+  gap: 20px;
 }
 
 .MT-color .warna-item a {
-    text-align: center;
-    color: #fff;
+  text-align: center;
+  color: #fff;
+  display: block;
 }
 
 .MT-color img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .MT-color span {
-    display: block;
-    margin-top: 5px; /* Jarak antara gambar dan teks */
+  display: block;
+  margin-top: 5px;
 }
+
+/*Fitur Konten*/
+.content .fitur {
+  margin-top: 40px;
+  margin-bottom: -5px;
+}
+
+.content .fitur h2 {
+  margin-bottom: 15px;
+}
+
+.top-fitur h3 {
+  color: yellowgreen;
+  margin-bottom: 15px;
+}
+
+/*Footer*/
 .footer {
   width: 100%;
   padding: 20px 0;
   background-color: #333;
   color: white;
-  text-align: center;
+  text-align:center;
 }
 
 /*Breakpoint*/
