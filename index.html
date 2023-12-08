@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no", initial-scale=1.0" />
     <meta http-equiv="X-Compatible" content="IE=edge" />
     <title>Yamaha MT 07 Series</title>
     <link rel="stylesheet" href="styles.css" />
@@ -19,7 +19,7 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <img src="Aset/yms_logo.png" alt="Logo" />
         </a>
 
@@ -34,10 +34,10 @@
             <a href="#about" class="nav-link" data-target="about">Tentang</a>
             <a href="#spek" class="nav-link" data-target="spek">Spesifikasi</a>
             <a href="#color" class="nav-link" data-target="color">Warna</a>
+            <a href="#fitur" class="nav-link" data-target="fitur">Fitur</a>
         </nav>
     </header>
-
-    <aside>
+    <main>
         <div id="home" class="main-container">
             <div class="col">
                 <div class="text-center">
@@ -46,17 +46,21 @@
                     <span class="smallTitle"></span>
                     <h4 class="prices">Harga Mulai Dari *</h4>
                     <div class="price_container">
-                        <h1>Rp 127.166.490 </h1>
+                        <h1>Rp 127.166.490</h1>
+                    </div>
+                    <br>
+                    <div class="note">
+                        <h4>Catatan Developer</h4>
+                        <p>Kamu bisa cek website resminya di :<br><a href="https://www.yamahamotorsports.com/models.php?product=254&action=productPage&yearTest=true#" target="_blank">Yamaha Motorsports</a></p>
+                        <br>
+                        <p>*Jika kamu memiliki saran silakan klik :</p>
                     </div>
 
                     <div class="buttons">
-                        <a href="#">
-                            <button class="btn-white">Pesan Sekarang</button>
+                        <a href="contact.html">
+                            <button class="btn-white">Contact Me</button>
                         </a>
-                        <br />
-                        <a href="#">
-                            <button class="btn-outline">Opsi Pembayaran</button>
-                        </a>
+                        <br/>
                     </div>
                     <br />
                 </div>
@@ -65,124 +69,168 @@
                 <img src="Aset/MT07 on the road.jpg" alt="Main Image" />
             </div>
         </div>
-    </aside>
+        <div class="content-container">
+            <div class="column">
+                <div id="about" class="content about">
+                    <article>
+                        <h2>Tentang</h2>
+                        <br />
+                        <p>
+                            MT-07 adalah salah satu line up MT Series yang disukai para bikers
+                            untuk sektor motor Naked Bike. Dimana motor ini memiliki desain yang
+                            baru dan fitur yang lebih banyak, hingga mesih yang sudah lolos Euro
+                            5 yang saat ini mulai diterapkan di kawasan eropa.
+                            <br />
+                            <br />
+                            Dibalik tampangnya yang gahar, siapa sangka Yamaha MT-07 ini
+                            merupakan motor yang diproduksi di Indonesia oleh Yamaha Indonesia
+                            Motor Manufacturing. Namun demikian unit Yamaha MT-07 hanya diekspor
+                            ke Eropa dan tidak dijual di pasar Indonesia.
+                        </p>
 
-    <main>
-        <div id="about" class="content about">
-            <article>
-                <h2>Tentang</h2>
-                <br />
-                <p>
-                    MT-07 adalah salah satu line up MT Series yang disukai para bikers
-                    untuk sektor motor Naked Bike. Dimana motor ini memiliki desain yang
-                    baru dan fitur yang lebih banyak, hingga mesih yang sudah lolos Euro
-                    5 yang saat ini mulai diterapkan di kawasan eropa.
-                    <br />
-                    <br />
-                    Dibalik tampangnya yang gahar, siapa sangka Yamaha MT-07 ini
-                    merupakan motor yang diproduksi di Indonesia oleh Yamaha Indonesia
-                    Motor Manufacturing. Namun demikian unit Yamaha MT-07 hanya diekspor
-                    ke Eropa dan tidak dijual di pasar Indonesia.
-                </p>
-
-                <div class="slider">
-                    <div class="slides">
-                        <div class="slide"><img src="Aset/Behind.jpg" alt="MT-07 1"></div>
-                        <div class="slide"><img src="Aset/Cocpit.jpg" alt="MT-07 2"></div>
-                        <div class="slide"><img src="Aset/Engine.jpg" alt="MT-07 3"></div>
-                        <div class="slide"><img src="Aset/Shroute.jpg" alt="MT-07 4"></div>
-                        <div class="slide"><img src="Aset/Tire.jpg" alt="MT-07 5"></div>
-                    </div>
+                        <div class="slider">
+                            <div class="slides">
+                                <div class="slide"><img src="Aset/Behind.jpg" alt="MT-07 1"></div>
+                                <div class="slide"><img src="Aset/Cocpit.jpg" alt="MT-07 2"></div>
+                                <div class="slide"><img src="Aset/Engine.jpg" alt="MT-07 3"></div>
+                                <div class="slide"><img src="Aset/Shroute.jpg" alt="MT-07 4"></div>
+                                <div class="slide"><img src="Aset/Tire.jpg" alt="MT-07 5"></div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </article>
+                <br>
+
+                <div id="spek" class="content specification">
+                    <article>
+                        <h2>Spesifikasi</h2>
+                        <table>
+                            <tr>
+                                <th>ENGINE</th>
+                                <th>CHASSIS</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Engine Type</strong><br>689cc liquid-cooled, DOHC, 4-stroke, 4-valves per
+                                    cylinder<br>
+                                    <strong>Bore x Stroke</strong><br>80.0mm x 68.6mm<br>
+                                    <strong>Compression Ratio</strong><br>11.5:1<br>
+                                    <strong>Fuel Delivery</strong><br>Fuel injection<br>
+                                    <strong>Transmission</strong><br>6-speed; wet multiplate clutch<br>
+                                    <strong>Final Drive</strong><br>Chain<br>
+                                    <strong>Fuel Capacity</strong><br>3.7 gal
+                                </td>
+                                <td>
+                                    <strong>Suspension/Front</strong><br>41mm telescopic fork; 5.1-in travel<br>
+                                    <strong>Suspension/Rear</strong><br>Single shock, adjustable preload and rebound
+                                    damping;
+                                    5.1-in travel<br>
+                                    <strong>Brakes/Front</strong><br>Dual 298mm hydraulic disc; ABS<br>
+                                    <strong>Brakes/Rear</strong><br>245mm hydraulic disc; ABS<br>
+                                    <strong>Tires/Front</strong><br>120/70ZR17<br>
+                                    <strong>Tires/Rear</strong><br>180/55ZR17
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DIMENSIONS</th>
+                                <th>OTHER</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>LxWxH</strong><br>82.1 in x 30.7 in x 43.5 in<br>
+                                    <strong>Seat Height</strong><br>31.7 in<br>
+                                    <strong>Wheelbase</strong><br>55.1 in<br>
+                                    <strong>Rake (Caster Angle)</strong><br>24° 50'<br>
+                                    <strong>Trail</strong><br>3.5 in<br>
+                                    <strong>Max. Ground Clearance</strong><br>5.5 in<br>
+                                    <strong>Fuel Capacity</strong><br>3.7 gal<br>
+                                    <strong>Fuel Economy</strong><br>58 mpg<br>
+                                    <strong>Wet Weight</strong><br>406 lb
+                                </td>
+                                <td>
+                                    <strong>Warranty</strong><br>1 Year (Limited Factory Warranty)<br>
+                                    <em>*Manufacturer's Suggested Retail Price (MSRP) shown. Does not include tax,
+                                        title, prep
+                                        or destination charges. Actual prices set by dealer.</em><br>
+                                    <strong>Fuel Economy</strong><br>Fuel Economy is estimated.<br>
+                                    <strong>Wet Weight</strong><br>Wet weight includes the vehicle with all standard
+                                    equipment
+                                    and all fluids, including oil, coolant (as applicable) and a full tank of fuel. It
+                                    does not
+                                    include the weight of options or accessories. Wet weight is useful in making
+                                    real-world
+                                    comparisons with other models.
+                                </td>
+                            </tr>
+                        </table>
+                    </article>
+                </div>
+            </div>
+            <aside>
+                <div id="color" class="content warna">
+                    <article>
+                        <h2>Warna</h2>
+                        <div class="MT-color">
+                            <div class="warna-item">
+                                <a class="Biru">
+                                    <img src="Aset/Blue_Big.png" alt="blue">
+                                    <span>Team Yamaha Blue</span>
+                                </a>
+                            </div>
+                            <div class="warna-item">
+                                <a class="Hitam">
+                                    <img src="Aset/Black_Big.png" alt="black">
+                                    <span>Matte Raven Black</span>
+                                </a>
+                            </div>
+                            <div class="warna-item">
+                                <a class="Abu-abu">
+                                    <img src="Aset/Gray_Big.png" alt="grey">
+                                    <span>Midnight Cyan</span>
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+                        <div id="fitur" class="content fitur">
+                            <article>
+                                <h2>Fitur</h2>
+                                <div class="top-fitur">
+                                    <h3>Layar TFT Lima Inci Berwarna Penuh</h3>
+                                    <p>Layar TFT lima inci penuh warna menyediakan pilihan dua mode layar yang berbeda.
+                                        Mode "Street" adalah tata letak yang lebih modern dengan takometer tipe batang,
+                                        speedometer digital, dan pembacaan pemilihan gigi. Mode "Touring" menampilkan
+                                        takometer gaya analog melingkar yang lebih konvensional di sebelah kanan layar
+                                        dan speedometer digital di sebelah kiri.</p>
+                                    <br>
+                                    <h3>Design Baru</h3>
+                                    <p>Tampilan agresif MT-07 semakin meningkatkan daya tariknya yang khas. Warna dan
+                                        grafis yang berani berpadu dengan desain stripped-back yang minimalis dan elemen
+                                        struktural untuk menekankan karakter Hyper Naked yang murni. Dengan siluet yang
+                                        identik dengan pernyataan torsi dan tenaga khas MT Series, MT-07 menampilkan
+                                        tampilan yang ramping, kompak dan bertenaga.</p>
+                                    <br>
+                                    <h3>Mesih Silinder Ganda yang Canggih</h3>
+                                    <p>MT-07 dilengkapi dengan mesin CP2 berpendingin cairan 689cc, silinder kembar
+                                        segaris, DOHC CP2 yang ringkas dengan injeksi bahan bakar. Mesin CP2 yang
+                                        menyenangkan dan berkarakter memberikan torsi yang luar biasa pada putaran
+                                        rendah dan menengah serta tenaga tarikan yang kuat pada putaran tinggi.
+                                        Pengaturan injeksi bahan bakar dioptimalkan untuk karakteristik respons throttle
+                                        yang mulus dan linier, bahkan ketika throttle sedikit terbuka pada rpm rendah.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+                </div>
+            </aside>
         </div>
-
-<br>
-
-<div id="spek" class="content specification">
-  <article>
-    <h2>Spesifikasi</h2>
-    <table>
-      <tr>
-        <th>ENGINE</th>
-        <th>CHASSIS</th>
-      </tr>
-      <tr>
-        <td>
-          <strong>Engine Type</strong><br>689cc liquid-cooled, DOHC, 4-stroke, 4-valves per cylinder<br>
-          <strong>Bore x Stroke</strong><br>80.0mm x 68.6mm<br>
-          <strong>Compression Ratio</strong><br>11.5:1<br>
-          <strong>Fuel Delivery</strong><br>Fuel injection<br>
-          <strong>Transmission</strong><br>6-speed; wet multiplate clutch<br>
-          <strong>Final Drive</strong><br>Chain<br>
-          <strong>Fuel Capacity</strong><br>3.7 gal
-        </td>
-        <td>
-          <strong>Suspension/Front</strong><br>41mm telescopic fork; 5.1-in travel<br>
-          <strong>Suspension/Rear</strong><br>Single shock, adjustable preload and rebound damping; 5.1-in travel<br>
-          <strong>Brakes/Front</strong><br>Dual 298mm hydraulic disc; ABS<br>
-          <strong>Brakes/Rear</strong><br>245mm hydraulic disc; ABS<br>
-          <strong>Tires/Front</strong><br>120/70ZR17<br>
-          <strong>Tires/Rear</strong><br>180/55ZR17
-        </td>
-      </tr>
-      <tr>
-        <th>DIMENSIONS</th>
-        <th>OTHER</th>
-      </tr>
-      <tr>
-        <td>
-          <strong>LxWxH</strong><br>82.1 in x 30.7 in x 43.5 in<br>
-          <strong>Seat Height</strong><br>31.7 in<br>
-          <strong>Wheelbase</strong><br>55.1 in<br>
-          <strong>Rake (Caster Angle)</strong><br>24° 50'<br>
-          <strong>Trail</strong><br>3.5 in<br>
-          <strong>Max. Ground Clearance</strong><br>5.5 in<br>
-          <strong>Fuel Capacity</strong><br>3.7 gal<br>
-          <strong>Fuel Economy</strong><br>58 mpg<br>
-          <strong>Wet Weight</strong><br>406 lb
-        </td>
-        <td>
-          <strong>Warranty</strong><br>1 Year (Limited Factory Warranty)<br>
-          <em>*Manufacturer's Suggested Retail Price (MSRP) shown. Does not include tax, title, prep or destination charges. Actual prices set by dealer.</em><br>
-          <strong>Fuel Economy</strong><br>Fuel Economy is estimated.<br>
-          <strong>Wet Weight</strong><br>Wet weight includes the vehicle with all standard equipment and all fluids, including oil, coolant (as applicable) and a full tank of fuel. It does not include the weight of options or accessories. Wet weight is useful in making real-world comparisons with other models.
-        </td>
-      </tr>
-    </table>
-  </article>
-</div>
-
-<div id="color" class="content warna">
-    <article>
-        <h2>Warna</h2>
-        <div class="MT-color">
-            <div class="warna-item">
-                <a class="Biru">
-                    <img src="Aset/Blue_Big.png" alt="blue">
-                    <span>Team Yamaha Blue</span>
-                </a>
-            </div>
-            <div class="warna-item">
-                <a class="Hitam">
-                    <img src="Aset/Black_Big.png" alt="black">
-                    <span>Matte Raven Black</span>
-                </a>
-            </div>
-            <div class="warna-item">
-                <a class="Abu-abu">
-                    <img src="Aset/Gray_Big.png" alt="grey">
-                    <span>Midnight Cyan</span>
-                </a>
-            </div>
-        </div>
-    </article>
-</div>
     </main>
 
     <footer class="footer">
         <p>
-            &copy; Yamaha Motor Corporation. | Design by Fandi Prasetyo | Dicoding 2023.
+            &copy; Yamaha Motor Corporation. | Design by Fandi Prasetyo 2023.
         </p>
     </footer>
 
@@ -190,4 +238,5 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
